@@ -1,0 +1,7 @@
+char=input("Enter a string:")
+pos=int(input("enter pos:"))
+if(pos<=0 or pos>len(char)):
+    print("Not possible")
+else:
+    s=char[:pos-1]+char[pos:]
+    print(s)
