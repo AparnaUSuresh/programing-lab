@@ -1,0 +1,3 @@
+num=input("Enter a word:")
+for i in num:
+    print("ordinal value of ",i,"is",ord(i))
