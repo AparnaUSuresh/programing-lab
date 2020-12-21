@@ -1,0 +1,5 @@
+n=input("Enter a string:")
+vowels="aeiouAEIOU"
+vowel=[i for i in n if i in vowels]
+print(vowel)
+
