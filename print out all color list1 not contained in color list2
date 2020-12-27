@@ -1,0 +1,15 @@
+lis1=[]
+lis2=[]
+lis3=[]
+n=int(input("Enter total elements in first list :"))
+for i in range(n):
+    n11=input("Enter the color name :")
+    lis1.append(n11)
+n1=int(input("Enter total elements in first list :"))
+for i in range(n1):
+    n12=input("Enter the color name :")
+    lis2.append(n12) 
+lis3=[i for i in lis1 if i not in lis2 ]
+print(lis3)
+
+
