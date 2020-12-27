@@ -1,0 +1,23 @@
+lis1=[]
+lis2=[]
+lis3=[]
+list1=int(input("Enter the no:of elements :"))
+for i in range(list1):
+    value=input("Enter the integer :")
+    lis1.append(value)
+list2=int(input("Enter the no of elements :"))
+for i in range(list2):
+    value1=input("Enter the integer:")
+    lis2.append(value1)
+if (list1==list2):
+    print("same length")
+else:
+    print("not same length")
+
+lis3=[i for i in lis1 if i in lis2]
+print("Same member are:",lis3)
+
+if (sum(lis1)==sum(lis2)):
+    print("same")crea
+else:
+    print("not same")
