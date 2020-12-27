@@ -1,0 +1,4 @@
+str1=input("Enter a strings:")
+s=str1[0]
+str1=str1.replace(s,'$')
+print(s+str1[1:])
