@@ -1,0 +1,6 @@
+n=int(input("Enter no:of elements:"))
+l1=[]
+for i in range(n):
+    l1.append(int(input("Enter number :")))
+m=[i for i in l1 if i%2!=0]    
+print(m)
