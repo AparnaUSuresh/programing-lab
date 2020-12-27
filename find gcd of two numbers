@@ -1,0 +1,6 @@
+n2=int(input("Enter the second number:"))  
+while n2!=0:
+    gcd=n1%n2
+    n1=n2
+    n2=gcd
+print("GCD of number is:",n1)
