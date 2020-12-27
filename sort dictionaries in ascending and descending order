@@ -1,0 +1,9 @@
+n=int(input("Enter no:of elements:"))
+dic={}
+for i in range(n):
+    dic[i]=input("Enter elements:")
+ascen=sorted(dic.values())
+print(ascen)                                                                                               
+ascen.reverse() 
+print(ascen)
+                        
