@@ -1,0 +1,8 @@
+n=int(input("Enter the no:of elements :"))
+lis1=[]
+for i in range(n):
+    value=input("Enter the integer :")
+    if int(value)>100:
+        value="over"
+    lis1.append(value)
+print(lis1)
