@@ -1,0 +1,9 @@
+list1=[]
+list2=[]
+x=int(input("Enter the number of elementns :"))
+for i in range(x):
+    value=int(input("Enter the numbrs :"))
+    list1.append(value)
+list2=[i*i for i in list1 ]
+
+print(list2)
