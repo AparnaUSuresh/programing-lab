@@ -1,0 +1,7 @@
+s=input("Enter the string:")
+str1=s.lower()
+str2=list(s.split(" "))
+str3=list(set(str2))
+print(str3)
+for n in str3:
+    print(n,"=",str2.count(n))
