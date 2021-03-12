@@ -1,0 +1,24 @@
+class rect:
+    def __init__(self,l,b):
+        self.l=l
+        self.b=b
+    def areaRect(self):
+        return self.l*self.b
+    def perimeterRect(self):
+        return 2*(self.l+self.b)
+l=int(input("Enter the length of rectangle 1:"))
+b=int(input("Enter the breadth of rectangle 1:"))
+r1=rect(l,b)
+area1=r1.areaRect()
+l=int(input("Enter length of rectangle 2:"))
+b=int(input("Enter breadth of rectangle 2:"))
+r2=rect(l,b)
+area2=r2.areaRect()
+if area1>area2:
+    print("Area 1 is greater")
+elif area1==area2:
+    print("Area1 is equal to Area 2")
+else:
+    print("Area 2 is greater")
+print("Perimeter of rect 1 is",r1.perimeterRect())
+print("Perimeter of rect 2 is",r2.perimeterRect())
