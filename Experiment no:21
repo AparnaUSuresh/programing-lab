@@ -1,0 +1,38 @@
+class bank:
+    def __init__(self,name,acc,type,bal):
+        self.name=name
+        self.acc_type=type
+        self.balance=bal
+    def deposit(self,amt):
+        self.balance +=amt
+        print(amt,"credited.Account Balance is",self.balance)
+    def withdraw (self,amt):
+        if(self.balance>amt):
+            self.balance-=amt
+            print(amt,"deducted.Account balance is",self.balance)
+        else:
+            print("No enough balance in account")
+    def display(self):
+        print("Name :",self.name)
+        print("Account number:",self.balance)
+        print("Account type:",self.acc_type)
+n=input("Enter the name of account holder:")
+t=input("Enter the type of account:")
+no=int(input("Enter account number:"))
+bal=int(input("Enter account balance:"))
+print("Menu\n1.Deposit cash\n2.withdraw cash\n3.display details \n4.exit\n")
+b=bank(n,no,t,bal)
+while(True):
+    choice=int(input("Enter choice:"))
+    if(choice==1):
+        amt=int(input("Enter amount to be deposited:"))
+        b.deposit(amt)
+    elif choice==2:
+        amt=int(input("Enter amount to be withdraw"))
+        b.withdraw(amt)
+    elif choice==3:
+        b.display()
+    elif choice ==4:
+        break;
+    else:
+        print("Wrong choice")
