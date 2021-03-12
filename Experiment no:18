@@ -1,0 +1,11 @@
+a=int(input("Enter side of squares:"))
+areaSquare=lambda x:x**2
+print("Area of square is %d"%areaSquare(a))
+l,b=[int(i)for i in input("Enter length,breadth of rectangle :").split()]
+areaRect=lambda X,Y:X*Y
+print("Area of the rectangle is %d"%areaRect(l,b))
+b,h=[int (i) for i in input("Enter basse,height of the triangle :").split()]
+areaTriangle=lambda x,y:x*y*0.5
+print("Area of traingle is %d"%areaTriangle(b,h))
+
+ 
